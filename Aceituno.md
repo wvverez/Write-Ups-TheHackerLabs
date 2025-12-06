@@ -21,7 +21,7 @@ Ya nos dice que el nombre "wvverez" no está registrado en este sitio , con lo c
 Ahora solo nos dice que es la contraseña, ves la diferencia. Siguiendo indagando por la web en el código fuente encontré algo que delato la página y fue que tenía asociado el plugin wp discuz 7.0.4 asociado en blogs.
 <img width="1196" height="226" alt="08_Aceituno" src="https://github.com/user-attachments/assets/533946e8-879d-43a5-8503-4b564224f76c" />
 Esto podiamos haberlo comprobado también en wpscan aunque en este caso no fue necesario.
-Vamos a buscar algún posible CVE, y lo encontré, vi que había un CVE reportado cuyo fallo de seguridad nos permitía RCE. Compartiré por aquí el exploit 
+Vamos a buscar algún posible CVE, y lo encontré, vi que había un CVE reportado cuyo fallo de seguridad nos permitía RCE. Compartiré por aquí el exploit:
 
 [![Repo](https://img.shields.io/badge/GitHub-Repository-1f6feb?style=for-the-badge)](https://github.com/hev0x/CVE-2020-24186-wpDiscuz-7.0.4-RCE.git)
 
