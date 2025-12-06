@@ -1,7 +1,4 @@
-Hoy traigo la resolución de una de mis máquinas favoritas de THL, "Aceituno". Bien vamos a ello, aclarar que la primera mitad fue resuelta en kali, por problemas técnicos y la otra mitad en parrot, con el mismo entorno pero nuevo
-
-
-## ENUMERACIÓN
+## 📋 ENUMERACIÓN
 
 Vamos a empezar con un escaneo nmap: 
 <img width="692" height="232" alt="01_Aceituno" src="https://github.com/user-attachments/assets/6acb39f9-6f9e-4d7e-b91e-66d0e9483b54" />
@@ -20,13 +17,13 @@ Por ejemplo si entro y pongo wvverez y pongo una contraseña cualquiera:
 <img width="632" height="671" alt="06_Aceituno" src="https://github.com/user-attachments/assets/5494c38b-7f2b-415b-81c3-e1b48c0756d1" />
 Ya nos dice que el nombre "wvverez" no está registrado en este sitio , con lo cual ya sabemos que no existe en la base de datos, pero sin embargo si probamos con el usuario aceituno que sabemos que existe ya que publico ciertos blogs.
 <img width="546" height="554" alt="07_Aceituno" src="https://github.com/user-attachments/assets/3c7401dd-ebb3-40d0-b926-72cb9a531b62" />
-## RECONOCIMIENTO
+## 🤔 RECONOCIMIENTO
 Ahora solo nos dice que es la contraseña, ves la diferencia. Siguiendo indagando por la web en el código fuente encontré algo que delato la página y fue que tenía asociado el plugin wp discuz 7.0.4 asociado en blogs.
 <img width="1196" height="226" alt="08_Aceituno" src="https://github.com/user-attachments/assets/533946e8-879d-43a5-8503-4b564224f76c" />
 Esto podiamos haberlo comprobado también en wpscan aunque en este caso no fue necesario.
 Vamos a buscar algún posible CVE, y lo encontré, vi que había un CVE reportado cuyo fallo de seguridad nos permitía RCE. Compartiré por aquí el exploit 
 https://github.com/hev0x/CVE-2020-24186-wpDiscuz-7.0.4-RCE.git
-## EXPLOTACIÓN
+## 💥 EXPLOTACIÓN
 Vamos a explotar: 
 <img width="945" height="351" alt="09_Aceituno" src="https://github.com/user-attachments/assets/a7c9eeda-7adc-488a-b009-8f5ac5e1893a" />
 Vamos a ejecutarlo para ver los parámetros que necesite: 
@@ -56,6 +53,7 @@ Y cambiando a pelopicopata para ver lo que contenía el otro, podemos fijarnos e
 Hay un carácter que no se ha filtrado aunque por un poco de coherencia podemos suponer que sería una Ñ, probé con ambas sin nada y con Ñ, y efectivamente era con Ñ.
 <img width="945" height="482" alt="021_Aceituno" src="https://github.com/user-attachments/assets/6e28226b-4dca-4def-a115-0afdb315b7ea" />
 Accedí ya por ssh, y ya estaríamos como el usuario aceituno. Al principio vimos que habia un servicio ssh corriendo por el puerto 22, al hacer 
+## 🧗‍♂️Escalada de privilegios
 sudo -l 
 Podemos ver que se utiliza el binario most, que nos permite ver ciertos archivos sin precisar ser root. Lo que hicimos ahora fue buscar una id_rsa gracias al puerto ssh del puerto 22 que había abierto. haciendo:
 sudo -u root /usr/bin/most /root/.ssh/id_rsa
