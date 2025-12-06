@@ -1,9 +1,9 @@
-## CONTACTO 
+## 🔐 CONTACTO 
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-## ENUMERACIÓN
+## 📋 ENUMERACIÓN
 Vamos a empezar con un escaneo nmap:
 
 <img width="1190" height="691" alt="01_photo" src="https://github.com/user-attachments/assets/d7b0ec77-ee53-41a0-a305-5b2342ee6514" />
