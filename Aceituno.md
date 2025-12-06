@@ -56,6 +56,7 @@ Y cambiando a pelopicopata para ver lo que contenía el otro, podemos fijarnos e
 Hay un carácter que no se ha filtrado aunque por un poco de coherencia podemos suponer que sería una Ñ, probé con ambas sin nada y con Ñ, y efectivamente era con Ñ.
 <img width="945" height="482" alt="021_Aceituno" src="https://github.com/user-attachments/assets/6e28226b-4dca-4def-a115-0afdb315b7ea" />
 Accedí ya por ssh, y ya estaríamos como el usuario aceituno. Al principio vimos que habia un servicio ssh corriendo por el puerto 22, al hacer 
+
 ## 🧗‍♂️Escalada de privilegios
 <pre>
     <code>
