@@ -65,7 +65,12 @@ sudo -l
 </pre>
 
 Podemos ver que se utiliza el binario most, que nos permite ver ciertos archivos sin precisar ser root. Lo que hicimos ahora fue buscar una id_rsa gracias al puerto ssh del puerto 22 que había abierto. haciendo:
+<pre>
+    <code>
 sudo -u root /usr/bin/most /root/.ssh/id_rsa
+</code>
+</pre>
+
 Al hacerlo conseguimos el id_rsa. El cual nos vamos a copiar al clipboard de momento. 
 <img width="1000" height="568" alt="022_Aceituno" src="https://github.com/user-attachments/assets/7239bcf0-1ca4-4a58-badc-0e76b1fae574" />
 Lo pasé a un fichero id_rsa. Claro podemos acceder como root por ssh gracias al id_rsa pero al intentarlo nos pedía contraseña. Con lo cual tenemos que crackearlo. Al intentar acceder por ssh nos pide contraseña.
@@ -76,8 +81,12 @@ y con ssh2john lo paso a hash_idRsa, lo listamos y se ejecuta correctamente.
 <img width="1854" height="416" alt="024_Aceituno" src="https://github.com/user-attachments/assets/6efe2956-a1da-49c1-a134-cf6fae01c3e7" />
 Vale bien me descomprimí el diccionario rockyou.txt y vamos a crackear este hash con johntheripper.
 <img width="1250" height="318" alt="025_Aceituno" src="https://github.com/user-attachments/assets/bd2bc21c-5ff0-4d65-be7c-f993de86d19f" />
+<pre>
+    <code>
 sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 john -w=/usr/share/wordlists/rockyou.txt hash_idRsa
+</code>
+</pre>
 
 Bien esperamos con paciencia y john nos crackea el hash vemos que podemos acceder como root con la contraseña "blessed1"
 <img width="1571" height="396" alt="026_Aceituno" src="https://github.com/user-attachments/assets/57a8b250-9076-41eb-be0b-22aa16298252" />
