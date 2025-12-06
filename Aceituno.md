@@ -40,7 +40,7 @@ Por ejemplo si entro y pongo wvverez y pongo una contraseña cualquiera:
 Ya nos dice que el nombre "wvverez" no está registrado en este sitio , con lo cual ya sabemos que no existe en la base de datos, pero sin embargo si probamos con el usuario aceituno que sabemos que existe ya que publico ciertos blogs.
 
 <img width="546" height="554" alt="07_Aceituno" src="https://github.com/user-attachments/assets/3c7401dd-ebb3-40d0-b926-72cb9a531b62" />
-## 🤔 RECONOCIMIENTO
+## 🤔RECONOCIMIENTO
 Ahora solo nos dice que es la contraseña, ves la diferencia. Siguiendo indagando por la web en el código fuente encontré algo que delato la página y fue que tenía asociado el plugin wp discuz 7.0.4 asociado en blogs.
 <img width="1196" height="226" alt="08_Aceituno" src="https://github.com/user-attachments/assets/533946e8-879d-43a5-8503-4b564224f76c" />
 Esto podiamos haberlo comprobado también en wpscan aunque en este caso no fue necesario.
