@@ -60,8 +60,9 @@ Accedí ya por ssh, y ya estaríamos como el usuario aceituno. Al principio vimo
 <pre>
     <code>
 sudo -l 
-</code
+</code>
 </pre>
+
 Podemos ver que se utiliza el binario most, que nos permite ver ciertos archivos sin precisar ser root. Lo que hicimos ahora fue buscar una id_rsa gracias al puerto ssh del puerto 22 que había abierto. haciendo:
 sudo -u root /usr/bin/most /root/.ssh/id_rsa
 Al hacerlo conseguimos el id_rsa. El cual nos vamos a copiar al clipboard de momento. 
