@@ -28,8 +28,11 @@ Vamos a explotar:
 <img width="945" height="351" alt="09_Aceituno" src="https://github.com/user-attachments/assets/a7c9eeda-7adc-488a-b009-8f5ac5e1893a" />
 Vamos a ejecutarlo para ver los parámetros que necesite: 
 En este caso nos piden: 
+
 -u --> la URL donde se encuentra el wordpress
+
 -p --> la página donde se usa el plugin wpDiscuz 7.0.4
+
 <img width="954" height="591" alt="010_Aceituno" src="https://github.com/user-attachments/assets/0c470070-672e-49ad-903d-55458cfb7f73" />
 Vamos a meternos a la webshell que nos acaba de subir para ver si se subio correctamente y tenemos vía potencial por RCE.
 <img width="1162" height="323" alt="011_Aceituno" src="https://github.com/user-attachments/assets/937174ca-e869-4867-8970-9af5e7bc4365" />
@@ -54,7 +57,11 @@ Hay un carácter que no se ha filtrado aunque por un poco de coherencia podemos 
 <img width="945" height="482" alt="021_Aceituno" src="https://github.com/user-attachments/assets/6e28226b-4dca-4def-a115-0afdb315b7ea" />
 Accedí ya por ssh, y ya estaríamos como el usuario aceituno. Al principio vimos que habia un servicio ssh corriendo por el puerto 22, al hacer 
 ## 🧗‍♂️Escalada de privilegios
+<pre>
+    <code>
 sudo -l 
+</code
+</pre>
 Podemos ver que se utiliza el binario most, que nos permite ver ciertos archivos sin precisar ser root. Lo que hicimos ahora fue buscar una id_rsa gracias al puerto ssh del puerto 22 que había abierto. haciendo:
 sudo -u root /usr/bin/most /root/.ssh/id_rsa
 Al hacerlo conseguimos el id_rsa. El cual nos vamos a copiar al clipboard de momento. 
