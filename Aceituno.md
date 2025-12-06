@@ -22,7 +22,9 @@ Ahora solo nos dice que es la contraseña, ves la diferencia. Siguiendo indagand
 <img width="1196" height="226" alt="08_Aceituno" src="https://github.com/user-attachments/assets/533946e8-879d-43a5-8503-4b564224f76c" />
 Esto podiamos haberlo comprobado también en wpscan aunque en este caso no fue necesario.
 Vamos a buscar algún posible CVE, y lo encontré, vi que había un CVE reportado cuyo fallo de seguridad nos permitía RCE. Compartiré por aquí el exploit 
-https://github.com/hev0x/CVE-2020-24186-wpDiscuz-7.0.4-RCE.git
+
+[![Repo](https://img.shields.io/badge/GitHub-Repository-1f6feb?style=for-the-badge)](https://github.com/hev0x/CVE-2020-24186-wpDiscuz-7.0.4-RCE.git)
+
 ## 💥 EXPLOTACIÓN
 Vamos a explotar: 
 <img width="945" height="351" alt="09_Aceituno" src="https://github.com/user-attachments/assets/a7c9eeda-7adc-488a-b009-8f5ac5e1893a" />
