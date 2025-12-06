@@ -1,4 +1,4 @@
-## 🔐 Contacto
+## 🔐 CONTACTO
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
@@ -67,7 +67,7 @@ Hay un carácter que no se ha filtrado aunque por un poco de coherencia podemos 
 <img width="945" height="482" alt="021_Aceituno" src="https://github.com/user-attachments/assets/6e28226b-4dca-4def-a115-0afdb315b7ea" />
 Accedí ya por ssh, y ya estaríamos como el usuario aceituno. Al principio vimos que habia un servicio ssh corriendo por el puerto 22, al hacer 
 
-## 🧗‍♂️Escalada de privilegios
+## 🧗‍♂️ESCALADA DE PRIVILEGIOS
 <pre>
     <code>
 sudo -l 
