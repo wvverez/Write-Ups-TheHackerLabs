@@ -17,6 +17,8 @@ Bueno tenemos un posible usuario ethan, en el código fuente no acabé encontran
 <img width="959" height="511" alt="03_photo" src="https://github.com/user-attachments/assets/f7fe8c48-dcc4-4232-8e14-6b991ba2fc23" />
 <img width="952" height="175" alt="04_photo" src="https://github.com/user-attachments/assets/b4d2c7b9-1193-4758-9174-89622fbb78de" />
 
+## 🤔 RECONOCIMIENTO 
+
 Tenemos un subdirectorio /admin, accediendo a el me encontré con un panel de login aunque no tenemos credenciales.
 
 <img width="929" height="701" alt="05_photo" src="https://github.com/user-attachments/assets/80670f67-c10c-4e33-8ee6-560e9aaf5b67" />
@@ -28,6 +30,8 @@ Vamos a volver a hacer fuzzing pero esta vez por parámetros a partir del subdir
 Encontramos la ruta admin.php vamos a irnos al burp para poder analizarlo mejor. 
 
 <img width="505" height="499" alt="07_photo" src="https://github.com/user-attachments/assets/c2a408a6-3808-4e4e-8df3-cc5a031fa374" />
+
+## 💥 EXPLOTACION 
 
 Bien ahora hacemos click derecho sobre la petición y le damos a do intercept > response to this request. Al darle a forward nos muestra un error 304
 
@@ -87,6 +91,8 @@ De este modo, en la respuesta tenemos en base64 el contenido de los archivos as�
 Bien tenemos vía potencial para acceder por ssh como el usuario ethan.
 
 <img width="956" height="393" alt="015_photo" src="https://github.com/user-attachments/assets/96237efb-fb02-4aec-bc7a-871883326162" />
+
+## ESCALADA DE PRIVILEGIOS 🧗‍♂️
 
 Perfecto acabamos de ganar acceso como el usuario ethan. Si revisamos los grupos a los que pertenece nuestro usuario con el comando id vemos que estamos en el grupo disk, con el cual podemos ver el contenido de las particiones del disco. Vemos que está en dev/sda1 
 
