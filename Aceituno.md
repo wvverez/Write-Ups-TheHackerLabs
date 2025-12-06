@@ -35,9 +35,13 @@ Vamos a explotar:
 Vamos a ejecutarlo para ver los parámetros que necesite: 
 En este caso nos piden: 
 
--u --> la URL donde se encuentra el wordpress
+<pre>
+    <code>
+-u = la URL donde se encuentra el wordpress
 
--p --> la página donde se usa el plugin wpDiscuz 7.0.4
+-p = la página donde se usa el plugin wpDiscuz 7.0.4
+</code>
+</pre>
 
 <img width="954" height="591" alt="010_Aceituno" src="https://github.com/user-attachments/assets/0c470070-672e-49ad-903d-55458cfb7f73" />
 Vamos a meternos a la webshell que nos acaba de subir para ver si se subio correctamente y tenemos vía potencial por RCE.
