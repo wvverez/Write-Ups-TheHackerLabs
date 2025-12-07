@@ -1,8 +1,19 @@
 ## ⚙️ CTF:
 
+<img width="1024" height="1024" alt="00_mortadela" src="https://github.com/user-attachments/assets/f17f6d72-b8d5-42db-a7c1-565f06a80116" />
+
+🪪 Nombre: Mortadela
+
+🛜 SO: Linux 
+
+🔊 Dificultad: Principiante
+
+👥 Creadores: Condor & Curiosidades de Hackers
 
 ## 🔐 CONTACTO
 
+[![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
 ## 📋 ENUMERACIÓN 
 
@@ -35,7 +46,7 @@ Encontré vía potencial por xmlrpc.php pero no encontramos nada. También vi qu
 
 Lo siguiente que encontré fue un wordpress en versión 6.4.3 lo cual es algo bastante crítico vi que la web contenía un plugin "wpdiscuz 7.0.4" con lo cual busque CVE para poder explotarlo y conseguí un exploit que me permitía RCE.
 
-https://github.com/hev0x/CVE-2020-24186-wpDiscuz-7.0.4-RCE.git
+[![Repo](https://img.shields.io/badge/GitHub-Repository-1f6feb?style=for-the-badge)](https://github.com/hev0x/CVE-2020-24186-wpDiscuz-7.0.4-RCE.git)
 
 <img width="967" height="611" alt="07_Mortadela" src="https://github.com/user-attachments/assets/fdf8b566-70b9-4858-ab41-90b6cda78c02" />
 
@@ -75,7 +86,7 @@ Vemos 2 archivos Database.kbdx y KeePass.DMP buscando un poco encontré un dump 
 Me lo moví para tenerlo todo junto y vamos a intentar dumpearlo.
 Por aquí comparto el exploit: 
 
-https://github.com/matro7sh/keepass-dump-masterkey.git
+[![Repo](https://img.shields.io/badge/GitHub-Repository-1f6feb?style=for-the-badge)](https://github.com/matro7sh/keepass-dump-masterkey.git)
 
 <img width="940" height="370" alt="017_Mortadela" src="https://github.com/user-attachments/assets/df73b1f1-cae0-424e-ab20-326e63bd2ef9" />
 
