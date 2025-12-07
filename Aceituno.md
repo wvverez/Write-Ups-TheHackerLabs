@@ -1,3 +1,14 @@
+## ⚙️ CTF:
+
+<img width="1024" height="1024" alt="00_Aceituno" src="https://github.com/user-attachments/assets/66f734bd-30d3-42a4-9537-1cc014806783" />
+
+🪪 Nombre: Aceituno
+
+🛜 SO: Linux 
+
+🔊 Dificultad: Avanzado
+
+👥 Creadores: Condor & Curiosidades de Hackers
 
 ## 🔐 CONTACTO
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
