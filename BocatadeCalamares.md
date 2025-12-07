@@ -1,6 +1,19 @@
-## CTF
+## ⚙️ CTF:
+
+<img width="1024" height="1024" alt="00_bocatacalamar" src="https://github.com/user-attachments/assets/ec876249-a511-4e93-890b-c07ec1b84137" />
+
+🪪 Nombre: BocatadeCalamares
+
+🛜 SO: Linux 
+
+🔊 Dificultad: Principiante
+
+👥 Creadores: 4ssw120
 
 ## CONTACTO
+
+[![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
 ## ENUMERACIÓN 
 En el día de hoy vamos a resolver la máquina Bocata de Calamares
