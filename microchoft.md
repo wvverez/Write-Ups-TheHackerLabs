@@ -10,12 +10,12 @@
 
 👥 Creadores: Condor & CuriosidadesdeHackers
 
-## CONTACTO
+## 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-## ENUMERACIÓN
+## 📋 ENUMERACIÓN
 
 Lo primero que hacemos es encargarnos de a través de la interfaz conseguir la IP de la máquina víctima ya que no nos la muestra por interfaz gráfica pero con host discovering la podemos conseguir fácil una vez tenemos la IP de la víctima podemos empezar escaneando los puertos.
 
@@ -30,7 +30,7 @@ Bien vemos que en el puerto 445 corre un Windows 7 home Basic
 
 <img width="953" height="113" alt="04_searchsploit" src="https://github.com/user-attachments/assets/dc891e97-5381-4245-8507-7def9e595811" />
 
-## RECONOCIMIENTO
+## 🤔 RECONOCIMIENTO
 
 Vemos la vulnerabilidad EternalBlue, Ahora sabemos que es un Windows 7 Home Basic 6.1 service pack1, además de que tiene el puerto smb abierto, que es el 445, para comprobar si un equipo es vulnerable a eternalblue, podemos comprobarlo mediante nmap, ya que nmap cuenta con un script que analiza si es vulnerable a esta vulnerabilidad o no.
 
@@ -46,7 +46,7 @@ Bien, primeramente la buscamos, la seleccionaremos y la explotaremos, la verdad 
 
 <img width="1845" height="744" alt="09_use0" src="https://github.com/user-attachments/assets/8e15105e-3134-46b2-9242-0fab3066b350" />
 
-## EXPLOTACIÓN 
+## 💥 EXPLOTACIÓN 
 
 Bien viendo las opciones lo siguiente que haremos será otorgar la máquina IP víctima y probaremos a explotar esta vulnerabilidad.
 
