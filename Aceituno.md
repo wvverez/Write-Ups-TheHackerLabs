@@ -1,3 +1,6 @@
+<img width="595" height="584" alt="00_foto" src="https://github.com/user-attachments/assets/44fc6276-7237-4146-be33-10b850a93a16" />
+
+
 ## ⚙️ CTF:
 
 🪪 Nombre: Fruits 
