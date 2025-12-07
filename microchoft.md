@@ -1,6 +1,6 @@
 ## ⚙️ CTF:
 
-<img width="1024" height="1024" alt="00_cachopo" src="https://github.com/user-attachments/assets/c6ec350a-1ae1-4f74-b153-a59bae7449f2" />
+<img width="1024" height="1024" alt="00_Microchoft" src="https://github.com/user-attachments/assets/553d7741-dde7-4e08-aa5e-07377fdf607c" />
 
 🪪 Nombre: Microchoft
 
