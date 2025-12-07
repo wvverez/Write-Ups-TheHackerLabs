@@ -1,8 +1,12 @@
-## CTF
-Nombre: Fruits 
-SO: linux
-Dificultad: Principiante 
-Creadores: Condor & Curiosidades de Hackers
+## ⚙️ CTF:
+
+🪪 Nombre: Fruits 
+
+🛜 SO: Linux 
+
+🔊 Dificultad: Principiante 
+
+👥 Creadores: Condor & Curiosidades de Hackers
 
 ## 🔐 CONTACTO
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
