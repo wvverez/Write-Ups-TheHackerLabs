@@ -1,8 +1,10 @@
-## CONTACTO
+## ⚙️ CTF:
 
 
+## 🔐 CONTACTO
 
-## ENUMERACIÓN 
+
+## 📋 ENUMERACIÓN 
 
 Vamos a empezar con un sencillo host Discovering y escaneando puertos abiertos y los servicios que corren.
 
@@ -11,6 +13,8 @@ Vamos a empezar con un sencillo host Discovering y escaneando puertos abiertos y
 Vemos que tenemos el puerto 22, 80 y 3306. En el que corre ssh por defecto, en el 80 tenemos la página de apache por defecto, y en el 3306 vemos que corre mysql.
 
 Entre en la página de apache pero no encontré nada en la página ni en el código fuente así que me puse a hacer fuzzing. Para buscar posibles rutas porenciales.
+
+## 🤔 RECONOCIMIENTO
 
 <img width="1610" height="464" alt="02_Mortadela" src="https://github.com/user-attachments/assets/0896ef51-f092-4bcd-b130-f336c45af96a" />
 <img width="1455" height="442" alt="03_Mortadela" src="https://github.com/user-attachments/assets/22843151-bf21-43ee-954e-dab503a68119" />
@@ -26,6 +30,8 @@ La página hiba medio rara, no cargaba por completo así que hice una enumeraci�
 Encontré vía potencial por xmlrpc.php pero no encontramos nada. También vi que teniamos un usuario confirmado llamado "mortadela".
 
 <img width="1092" height="340" alt="06_Mortadela" src="https://github.com/user-attachments/assets/f595a49f-e39b-44e1-9b12-6f767f8c8067" />
+
+## 💥 EXPLOTACION 
 
 Lo siguiente que encontré fue un wordpress en versión 6.4.3 lo cual es algo bastante crítico vi que la web contenía un plugin "wpdiscuz 7.0.4" con lo cual busque CVE para poder explotarlo y conseguí un exploit que me permitía RCE.
 
