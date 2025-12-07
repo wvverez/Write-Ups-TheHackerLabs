@@ -10,12 +10,12 @@
 
 👥 Creadores: 4ssw120
 
-## CONTACTO
+## 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-## ENUMERACIÓN 
+## 📋 ENUMERACIÓN 
 En el día de hoy vamos a resolver la máquina Bocata de Calamares
 
 <img width="1216" height="685" alt="01_bocatacalamar" src="https://github.com/user-attachments/assets/8bb236b5-cdcf-45a8-ad01-9f576c29c0d5" />
@@ -26,7 +26,7 @@ Vamos a ver la página.
 
 <img width="846" height="788" alt="02_bocatacalamar" src="https://github.com/user-attachments/assets/30da6828-36f5-49d7-b560-7ef9aa6199e8" />
 
-## RECONOCIMIENTO 
+## 🤔 RECONOCIMIENTO 
 
 Vemos como supuestas noticias, ningún enlace hiba ni había nada interesante en el código fuente, así que como no disponía de nada más, vamos a aplicar fuzzing para buscar posibles rutas potenciales.
 
@@ -45,7 +45,7 @@ Aquí vemos como intercepta la solicitud vamos a probar con alguna query conocid
 
 <img width="486" height="502" alt="09_bocatacalamar" src="https://github.com/user-attachments/assets/747bc703-1c96-41c4-9104-07baccf58870" />
 
-## EXPLOTACIÓN 
+## 💥 EXPLOTACIÓN 
 
 Probé con ´ or 1=1 -- - y muy importante URLencodearlo para que pueda interpretarlo.
 
@@ -70,7 +70,7 @@ Tenemos 3 usuarios: superadministrator, yuiop y root vamos a probar a crackear e
 
 <img width="1324" height="732" alt="015_bocatacalamar" src="https://github.com/user-attachments/assets/c6dec29c-19c4-4bc7-a201-de6c6dbdb26c" />
 
-## ESCALADA DE PRIVILEGIOS 
+## 🧗‍♂️ ESCALADA DE PRIVILEGIOS 
 
 Nos crackeo la contraseña bien, pues vamos a acceder vía ssh como el usuario "superadministrator"
 
