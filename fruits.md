@@ -33,7 +33,8 @@ Nos fijamos que es posible que el SO pueda ser un Debian. Vamos a echarle un vis
 
 Bueno es un simple buscador de frutas, en el código fuente no se apreciaba nada relevante, de primeras probé a buscar algo cualquiera por ejemplo manzana en este caso.
 
-<img width="1765" height="474" alt="05_FUZZING" src="https://github.com/user-attachments/assets/ba387c1a-ff55-40b3-bccc-1374b078eddb" />
+<img width="701" height="287" alt="04_colerabbit" src="https://github.com/user-attachments/assets/ea88317a-db4a-4e3f-936d-dd31afe5e506" />
+
 
 Vemos que nos direcciona a un supuesto buscar.php y vemos que no existe, nos cuela un medio rabbit hole. Esto puede ser por que haya sido eliminado o podría estar relacionado con otro fichero, vamos a aplicar fuzzing para encontrar alguna ruta potencial a la que pueda redirigir.
 
