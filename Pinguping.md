@@ -1,8 +1,19 @@
-## CTF
+## ⚙️ CTF:
 
+<img width="1024" height="1024" alt="00_pinguping" src="https://github.com/user-attachments/assets/a3382035-8065-40c5-a6e0-8c01728d4de9" />
+
+🪪 Nombre: PinguPing
+
+🛜 SO: Linux 
+
+🔊 Dificultad: Avanzado
+
+👥 Creadores: ElpinguinodeMario
 
 ## CONTACTO
 
+[![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
 ## ENUMERACIÓN 
 
@@ -19,12 +30,16 @@ Interesante, vemos una especie de Ping tester a IPs que le indiquemos, vamos a a
 
 <img width="553" height="640" alt="03_pinguping" src="https://github.com/user-attachments/assets/0b5bfbb7-3155-4f28-8a22-7de15d4fada7" />
 
+## RECONOCIMIENTO
+
 Aquí vi un poco más en detalle como respondía, se me ocurrio algo que fue el echo de poder aprovecharlo con ";" haciendo así una solicitud que llegará al servidor que a partir de lo primero se cumpla o no realize lo segundo.
 
 Probé esto mismo con un ls -la a ver si me lo interpreta.
 
 <img width="503" height="325" alt="04_pinguping" src="https://github.com/user-attachments/assets/85f66082-16f0-49b0-b33f-c9a4f1c16a9c" />
 <img width="455" height="449" alt="05_pinguping" src="https://github.com/user-attachments/assets/42c24c47-5901-42b6-b631-ae3f73c5d339" />
+
+## EXPLOTACIÓN
 
 Me lo respondió, esto es algo completamente crítico ya que podemos abusar de esto. Y lo hicimos, vamos a subirnos nuestra revshell. La subimos y nos ponemos en escucha en el puerto 4444
 
@@ -43,6 +58,8 @@ Mongodb tiene distinta dinámica a mysql o oracle aquí no se dividen por tablas
 <img width="733" height="675" alt="09_pinguping" src="https://github.com/user-attachments/assets/86e3fc73-ec23-486a-8f0c-86b1588abb75" />
 
 Aquí conseguimos la contraseña del usuario "secretote" con lo cual vamos a conectarnos por ssh a este usuario.
+
+## ESCALADA DE PRIVILEGIOS
 
 Una vez dentro como el usuario secretote mire los binarios sudoers que tenía asignado y tenía asignado el binario sed.
 
