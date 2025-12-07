@@ -1,6 +1,6 @@
-## CONTACTO
+## 🔐 CONTACTO
 
-## ENUMERACIÓN 
+## 📋 ENUMERACIÓN 
 
 Vamos a empezar como siempre con un escaneo nmap sencillo para buscar puertos abiertos. 
 
@@ -21,6 +21,8 @@ Bueno es un simple buscador de frutas, en el código fuente no se apreciaba nada
 
 Vemos que nos direcciona a un supuesto buscar.php y vemos que no existe, nos cuela un medio rabbit hole. Esto puede ser por que haya sido eliminado o podría estar relacionado con otro fichero, vamos a aplicar fuzzing para encontrar alguna ruta potencial a la que pueda redirigir.
 
+## 🤔 RECONOCIMIENTO 
+
 <img width="1765" height="474" alt="05_FUZZING" src="https://github.com/user-attachments/assets/82ac6fb4-33a4-426f-920d-999d6b41a344" />
 <img width="1047" height="221" alt="06_FRUITSPHP" src="https://github.com/user-attachments/assets/7708d25b-504d-4388-99a3-73067ddc8676" />
 
@@ -40,11 +42,15 @@ Con lo cual tenemos que seguir haciendo fuzzing pero esta vez por parámetros, v
 
 Tenemos un LFI, con /etc/passwd probé con hosts también aunque solo funciono de esta forma. Pero hemos encontrado el usuario bananaman. Con lo cual ahora podemos intentar hacer fuerza bruta al servicio SSH empleando como usuario bananaman por que claro, al intentar conectarte por ssh te pedirá una contraseña la cual no tenemos.
 
+## 💥 EXPLOTACION 
+
 <img width="1860" height="332" alt="010_celtic" src="https://github.com/user-attachments/assets/e13b8a47-a7c0-4267-9db4-ed8e66566cbb" />
 
 Crackeamos la contraseña con lo cual ahora podemos acceder por ssh como bananaman
 
 <img width="929" height="453" alt="011_ssh" src="https://github.com/user-attachments/assets/ec22dd10-d4e6-45c6-880a-050cf6315c76" />
+
+## 🧗‍♂️ ESCALADA DE PRIVILEGIOS 
 
 Ya estaríamos como el usuario bananaman. Teniendo sus credenciales vamos a ver si tiene algun permiso sudoers al hacer sudo -l 
 
