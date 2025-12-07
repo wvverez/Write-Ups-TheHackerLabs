@@ -1,6 +1,19 @@
-## CTF:
+## ⚙️ CTF:
+
+<img width="1024" height="1024" alt="00_pinguping" src="https://github.com/user-attachments/assets/a3382035-8065-40c5-a6e0-8c01728d4de9" />
+
+🪪 Nombre: Bridgenton
+
+🛜 SO: Linux 
+
+🔊 Dificultad: Avanzado
+
+👥 Creadores: Condor & CuriosidadesdeHackers
 
 ## CONTACTO
+
+[![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
 ## ENUMERACIÓN
 En el día de hoy traigo la resolución de la máquina Bridgenton catalogada como dificultad avanzada.
@@ -20,6 +33,8 @@ Bien, vemos que redirigen a múltiples sitios en el de profesorado solamente ten
 <img width="940" height="632" alt="04_Bridgenton" src="https://github.com/user-attachments/assets/6d6651e7-4381-4d6f-842a-ae5e4e99c23c" />
 <img width="956" height="167" alt="05_Bridgenton" src="https://github.com/user-attachments/assets/e559a5c5-2fc8-415f-be6f-c477a30f1492" />
 
+## RECONOCIMIENTO
+
 Encontramos el subdirectorio uploads, el resto no fueron interesante aquí podemos ver lo que se subía, las actualizaciones basicámente.
 
 <img width="735" height="356" alt="06_Bridgenton" src="https://github.com/user-attachments/assets/9fa65204-d0ec-4d0d-bb89-4f52bc116287" />
@@ -33,6 +48,8 @@ Aquí nos aparecerían las actualizaciones de los archivos que se suban. Vamos a
 Bueno como era de esperar, no nos deja sin embargo existen múltiples opciones a php que nos dejarían interpretarlo igualmente con la misma función y que pueden no estar filtradas, con lo cual vamos a probar, existen bastantes como php6,php7,phtml...
 
 <img width="678" height="692" alt="010_Bridgenton" src="https://github.com/user-attachments/assets/f4b564dc-4bbb-4510-922f-7344750fe82d" />
+
+## EXPLOTACIÓN
 
 Bien vamos a abrirnos el burp para poder analizarlo mejor así de primeras con la extensión .php no nos va a dejar poder subirlo. Con lo cual toca probar con varios hasta que di con .phtml
 
@@ -75,6 +92,8 @@ Bien, vamos a crackearlo usaremos el diccionario rockyou.txt
 Bien tenemos la clave del id_rsa del usuario james vamos a acceder por ssh usando el id_rsa-
 
 <img width="890" height="491" alt="021_Bridgenton" src="https://github.com/user-attachments/assets/9d7c517d-b25c-48ed-bc4a-7b33bfa7729d" />
+
+## ESCALADA DE PRIVILEGIOS
 
 Bien, conseguido ya estamos como el usuario james, vamos con la escalada, vamos a ver los permisos sudoers primeramente.
 
