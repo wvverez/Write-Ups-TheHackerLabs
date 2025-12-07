@@ -1,6 +1,6 @@
 ## ⚙️ CTF:
 
-<img width="1024" height="1024" alt="00_pinguping" src="https://github.com/user-attachments/assets/a3382035-8065-40c5-a6e0-8c01728d4de9" />
+<img width="322" height="327" alt="00_Bridgenton" src="https://github.com/user-attachments/assets/1c94d0cc-c54f-4f53-8a2d-597d7f7ae6b8" />
 
 🪪 Nombre: Bridgenton
 
