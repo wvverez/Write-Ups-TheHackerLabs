@@ -10,12 +10,12 @@
 
 👥 Creadores: Condor & CuriosidadesdeHackers
 
-## CONTACTO
+## 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-## ENUMERACIÓN
+## 📋 ENUMERACIÓN
 En el día de hoy traigo la resolución de la máquina Bridgenton catalogada como dificultad avanzada.
 
 <img width="947" height="702" alt="01_Bridgenton" src="https://github.com/user-attachments/assets/5a593d2c-b8e3-47d3-a600-32daa7465351" />
@@ -33,7 +33,7 @@ Bien, vemos que redirigen a múltiples sitios en el de profesorado solamente ten
 <img width="940" height="632" alt="04_Bridgenton" src="https://github.com/user-attachments/assets/6d6651e7-4381-4d6f-842a-ae5e4e99c23c" />
 <img width="956" height="167" alt="05_Bridgenton" src="https://github.com/user-attachments/assets/e559a5c5-2fc8-415f-be6f-c477a30f1492" />
 
-## RECONOCIMIENTO
+## 🤔 RECONOCIMIENTO
 
 Encontramos el subdirectorio uploads, el resto no fueron interesante aquí podemos ver lo que se subía, las actualizaciones basicámente.
 
@@ -49,7 +49,7 @@ Bueno como era de esperar, no nos deja sin embargo existen múltiples opciones a
 
 <img width="678" height="692" alt="010_Bridgenton" src="https://github.com/user-attachments/assets/f4b564dc-4bbb-4510-922f-7344750fe82d" />
 
-## EXPLOTACIÓN
+## 💥 EXPLOTACIÓN
 
 Bien vamos a abrirnos el burp para poder analizarlo mejor así de primeras con la extensión .php no nos va a dejar poder subirlo. Con lo cual toca probar con varios hasta que di con .phtml
 
@@ -93,7 +93,7 @@ Bien tenemos la clave del id_rsa del usuario james vamos a acceder por ssh usand
 
 <img width="890" height="491" alt="021_Bridgenton" src="https://github.com/user-attachments/assets/9d7c517d-b25c-48ed-bc4a-7b33bfa7729d" />
 
-## ESCALADA DE PRIVILEGIOS
+## 🧗‍♂️ESCALADA DE PRIVILEGIOS
 
 Bien, conseguido ya estamos como el usuario james, vamos con la escalada, vamos a ver los permisos sudoers primeramente.
 
