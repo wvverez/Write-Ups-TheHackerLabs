@@ -10,12 +10,12 @@
 
 👥 Creadores: Condor & CuriosidadesdeHackers
 
-## CONTACTO
+## 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-## ENUMERACIÓN 
+## 📋 ENUMERACIÓN 
 
 Vamos a empezar con un sencillo escaneo de red para enumerar puertos y servicios que corren y sus versiones.
 
@@ -31,7 +31,7 @@ Bueno vemos una imagen de un plato de cachopo en el código fuente tampoco se ap
 
 <img width="713" height="567" alt="03_Cachopo" src="https://github.com/user-attachments/assets/1b4b1e9a-4fb8-40fe-8d93-9cd37093b94a" />
 
-## RECONOCIMIENTO
+## 🤔 RECONOCIMIENTO
 
 Con stegcracker vemos que podemos romper la contraseña de la imagen.
 
@@ -46,7 +46,7 @@ Bueno vemos que nos indica un directorio así que vamos a probarlo en el navegad
 <img width="846" height="349" alt="06_Cachopo" src="https://github.com/user-attachments/assets/cba15ded-3326-4e33-9e17-75d722e67e53" />
 <img width="958" height="531" alt="07_Cachopo" src="https://github.com/user-attachments/assets/f14e58b7-ddfd-41ca-87b4-36821465c140" />
 
-## EXPLOTACIÓN
+## 💥 EXPLOTACIÓN
 
 Bueno vemos que es un archivo cifrado así que sacaremos el hash y posteriormente lo romperemos con john, tenemos la contraseña del producto ofimático , que en este caso es un libreoffice y podemos acceder a el con la contra horse1 
 
@@ -60,7 +60,7 @@ Una vez crackeada la contraseña podemos acceder vía ssh.
 
 <img width="951" height="477" alt="010_Cachopo" src="https://github.com/user-attachments/assets/478cc508-4448-47f9-83dd-bd691443532f" />
 
-## ESCALADA DE PRIVILEGIOS
+## 🧗‍♂️ ESCALADA DE PRIVILEGIOS
 
 Bien viendo los permisos sudoers el usuario carlos vemos que tiene asociado el binario crash. El cual podemos abusar de el y acceder como root ejecutando:
 
