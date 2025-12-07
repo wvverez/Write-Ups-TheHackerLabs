@@ -1,6 +1,19 @@
-## CTF 
+## ⚙️ CTF:
+
+<img width="1024" height="1024" alt="00_cachopo" src="https://github.com/user-attachments/assets/c6ec350a-1ae1-4f74-b153-a59bae7449f2" />
+
+🪪 Nombre: Cachopo
+
+🛜 SO: Linux 
+
+🔊 Dificultad: Avanzado
+
+👥 Creadores: Condor & CuriosidadesdeHackers
 
 ## CONTACTO
+
+[![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
 ## ENUMERACIÓN 
 
