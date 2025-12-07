@@ -10,12 +10,12 @@
 
 👥 Creadores: Condor & CuriosidadesdeHackers
 
-## CONTACTO
+## 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-## ENUMERACIÓN
+## 📋 ENUMERACIÓN
 
 En el día de hoy traigo la resolución de la máquina Grillo con SO Linux.
 
@@ -25,19 +25,19 @@ Empezamos haciendo un escaneo completo de SO, puertos abiertos y servicios y ver
 
 <img width="844" height="640" alt="02_grillo" src="https://github.com/user-attachments/assets/830186bc-615f-411b-9b4f-412e0c96400f" />
 
-## RECONOCIMIENTO
+## 🤔 RECONOCIMIENTO
 
 En la página comprobe código fuente y enlaces pero nada aunque abajo encontré este mensaje extraño así que supuse que había un usuario que se llamaría melanie.
 
 <img width="1352" height="748" alt="03_grillo" src="https://github.com/user-attachments/assets/e2c8df44-155d-40ff-84d8-61d37266026f" />
 
-## EXPLOTACIÓN 
+## 💥 EXPLOTACIÓN 
 
 Probé a crackearlo con hydra con el diccionario rockyou.txt y parece que fue suficiente conseguimos la contraseña y ya pude conectarme por ssh ccomo melanie.
 
 <img width="1193" height="300" alt="04_grillo" src="https://github.com/user-attachments/assets/da31a683-64de-4e90-877d-0b0ed4625e8b" />
 
-## ESCALADA DE PRIVILEGIOS
+## 🧗‍♂️ESCALADA DE PRIVILEGIOS
 
 Miré los permisos sudoers y vi un extraño llamado "puttygen". Tras buscar información ejecute puttygen con privilegios root para crear una clave rsa en formato openssh. Puse una passphrase cualquiera y se creó la clave privada id_rsa
 
