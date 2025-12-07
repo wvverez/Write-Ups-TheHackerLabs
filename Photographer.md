@@ -1,3 +1,15 @@
+## ⚙️ CTF:
+
+<img width="1024" height="1024" alt="00_photo" src="https://github.com/user-attachments/assets/b9d4d43b-2338-40d6-91ad-0213e05cb80e" />
+
+🪪 Nombre: Photographer
+
+🛜 SO: Linux 
+
+🔊 Dificultad: Avanzado
+
+👥 Creadores: D4redevil
+
 ## 🔐 CONTACTO 
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
