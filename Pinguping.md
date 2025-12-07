@@ -10,12 +10,12 @@
 
 👥 Creadores: ElpinguinodeMario
 
-## CONTACTO
+## 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-## ENUMERACIÓN 
+## 📋 ENUMERACIÓN 
 
 Empezamos como siempre con mi herramienta echa en bash haciendo hostdiscovering y analizando puertos abiertos y servicios que corren en cada uno de ellos.
 Nos fijamos en el 22 que corre ssh por defecto en el 80 la página de apache predeterminada y en el 5000 tenemos algo interesante que vemos que corre Werkzeug.
@@ -30,7 +30,7 @@ Interesante, vemos una especie de Ping tester a IPs que le indiquemos, vamos a a
 
 <img width="553" height="640" alt="03_pinguping" src="https://github.com/user-attachments/assets/0b5bfbb7-3155-4f28-8a22-7de15d4fada7" />
 
-## RECONOCIMIENTO
+## 🤔 RECONOCIMIENTO
 
 Aquí vi un poco más en detalle como respondía, se me ocurrio algo que fue el echo de poder aprovecharlo con ";" haciendo así una solicitud que llegará al servidor que a partir de lo primero se cumpla o no realize lo segundo.
 
@@ -39,7 +39,7 @@ Probé esto mismo con un ls -la a ver si me lo interpreta.
 <img width="503" height="325" alt="04_pinguping" src="https://github.com/user-attachments/assets/85f66082-16f0-49b0-b33f-c9a4f1c16a9c" />
 <img width="455" height="449" alt="05_pinguping" src="https://github.com/user-attachments/assets/42c24c47-5901-42b6-b631-ae3f73c5d339" />
 
-## EXPLOTACIÓN
+## 💥 EXPLOTACIÓN
 
 Me lo respondió, esto es algo completamente crítico ya que podemos abusar de esto. Y lo hicimos, vamos a subirnos nuestra revshell. La subimos y nos ponemos en escucha en el puerto 4444
 
@@ -59,7 +59,7 @@ Mongodb tiene distinta dinámica a mysql o oracle aquí no se dividen por tablas
 
 Aquí conseguimos la contraseña del usuario "secretote" con lo cual vamos a conectarnos por ssh a este usuario.
 
-## ESCALADA DE PRIVILEGIOS
+## 🧗‍♂️ESCALADA DE PRIVILEGIOS
 
 Una vez dentro como el usuario secretote mire los binarios sudoers que tenía asignado y tenía asignado el binario sed.
 
