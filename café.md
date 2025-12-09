@@ -10,12 +10,12 @@
 
 👥 Creadores: d4redevil
 
-## CONTACTO
+## 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-## ENUMERACIÓN 
+## 📋 ENUMERACIÓN 
 
 Empezamos con un escaneo nmap para ver versiones servicios y puertos abiertos que corren.
 
@@ -27,6 +27,7 @@ En la página no tiene mucho menos un panel de reservaciones en el que teníamos
 
 <img width="848" height="789" alt="02_cafe" src="https://github.com/user-attachments/assets/22ac81f6-91de-4206-b170-4c57e29f4117" />
 
+## 🤔 RECONOCIMIENTO
 Vamos a interceptarnos la solicitud con burp, bueno vemos que usa el Método POST y en texto sin formato 
 
 Con lo cual una forma que tenemos para explotarlo es mediante NoSQL Injetion, probé con SQLi también y XSS pero no hubo forma, si ponemos not equal vemos que nos redirige a "panel.php".
@@ -112,6 +113,7 @@ Kurt password:
 
 <img width="807" height="466" alt="07_Café" src="https://github.com/user-attachments/assets/757d0281-178a-4513-8e40-f4a1ef00e187" />
 
+## 💥EXPLOTACIÓN
 Con las credenciales de Kurt vamos a acceder por ssh. Aquí he encontrado el .git de la aplicación.
 
 <img width="963" height="803" alt="08_Café" src="https://github.com/user-attachments/assets/b395acfc-9b20-49b9-8234-d70259676827" />
@@ -183,6 +185,7 @@ Buscando encontramos que hay varias contraseñas del usuario "Ana".
 
 Acabamos encontrando la contraseña del usuario Ana despues de bastantes pruebas. Una vez nos metemos vamos a ver los sudoers del usuario Ana y vemos que tenemos asociado el binario "uuencode"
 
+## 🧗‍♂️ESCALADA DE PRIVILEGIOS
 
 <img width="925" height="214" alt="018_Café" src="https://github.com/user-attachments/assets/1653f440-a862-47e9-a3f7-978f05112861" />
 
