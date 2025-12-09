@@ -61,7 +61,7 @@ cookies = {
 
 # Headers
 headers = {
-    "Host": "192.168.178.112",
+    "Host": "192.168.91.140",
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.5",
@@ -146,6 +146,63 @@ Esta extensión .cap es una captura de wireshark, así que me lo paso a mi siste
 
 <img width="1853" height="432" alt="013_café" src="https://github.com/user-attachments/assets/c806a731-adb3-4788-bc60-865a4f997446" />
 
-Bien una vez lo tenemos vamos a pasarnoslo a 
+Bien una vez lo tenemos vamos a pasarnoslo a nuestro wireshark para ver que puede contener.
+
+Bueno buscando un poco encontramos en una consulta de FTP una solicitud que pone PASS: y una contraseña.
+
+<img width="873" height="596" alt="014_café" src="https://github.com/user-attachments/assets/486ef019-90f9-4378-9e53-3b7f88731097" />
+
+En este caso era la contraseña del usuario Sofía.
+
+<img width="427" height="118" alt="015_café" src="https://github.com/user-attachments/assets/8445924f-087e-4b81-b022-d51454f75d0d" />
+
+En el escaneo nmap que hicimos al principio habiamos podido ver que hay un samba así que vamos a probar estas credenciales para ver si son validas.
+
+<img width="893" height="362" alt="016_café" src="https://github.com/user-attachments/assets/abe1edfd-806e-4c20-b984-e6ea141bb719" />
+
+Tenemos acceso a finanzas, lectura y escritura. A continuación vamos a usar los siguientes comandos para poder descargarnos el excel.
+
+<pre>
+  <code>
+    smbclient //192.168.91.140/finanzas -U sofia
+  </code>
+</pre>
+
+<pre>
+  <code>
+    get finanzas.xlsx
+  </code>
+</pre>
 
 
+<img width="627" height="303" alt="017_Café" src="https://github.com/user-attachments/assets/893b0526-5ef9-4307-ad88-47c38c992731" />
+
+Vamos a descomprimirnos el excel y vamos a probar a filtrar por password o contraseña, palabras relacionadas a ver que encontramos.
+
+Buscando encontramos que hay varias contraseñas del usuario "Ana".
+
+Acabamos encontrando la contraseña del usuario Ana despues de bastantes pruebas. Una vez nos metemos vamos a ver los sudoers del usuario Ana y vemos que tenemos asociado el binario "uuencode"
+
+
+<img width="925" height="214" alt="018_Café" src="https://github.com/user-attachments/assets/1653f440-a862-47e9-a3f7-978f05112861" />
+
+Para abusar de este privilegio como sudo podemos hacerlo de esta forma.
+
+<pre>
+  <code>
+    LFILE=file_to_read
+    sudo uuencode "$LFILE" /dev/studout | uudecode
+  </code>
+</pre>
+
+Y habríamos conseguido el id_rsa vamos a darle permisos de ejecución 600.
+
+<img width="732" height="334" alt="019_Café" src="https://github.com/user-attachments/assets/f293d826-67d8-4890-99ac-7e2a5c6d88c9" />
+
+Y vamos a probar a acceder como root bypasseando la contraseña gracias al id_Rsa.
+
+<img width="871" height="326" alt="020_Café" src="https://github.com/user-attachments/assets/8b309061-ad30-422b-b716-430354db51da" />
+
+Y ya estaríamos como root.
+
+Salud ^^
