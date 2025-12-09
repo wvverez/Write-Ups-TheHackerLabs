@@ -10,13 +10,13 @@
 
 👥 Creadores: NnN
 
-## CONTACTO
+## 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
 
-## ENUMERACIÓN 
+## 📋 ENUMERACIÓN 
 Vamos a empezar como siempre con un escaneo nmap para enumerar puertos y servicios corriendo.
 
 <img width="946" height="687" alt="01_Tortuga" src="https://github.com/user-attachments/assets/5513cc68-6fa5-41df-8332-c435269237a8" />
@@ -25,11 +25,11 @@ Vemos puerto 22 y 80 abiertos donde corre OpenSSH por defecto y en 80 http donde
 
 <img width="872" height="836" alt="02_Tortuga" src="https://github.com/user-attachments/assets/9daaacee-09b5-4fff-9d9b-ff4894db222a" />
 
-## RECONOCIMIENTO
+## 🤔 RECONOCIMIENTO
 
 Vemos la página simple, en conocer la tripulación tenemos los tripulantes que son pero al ver el mapa ya tenemos el usuario "grumete".
 
-## EXPLOTACIÓN 
+## 💥 EXPLOTACIÓN 
 
 <img width="845" height="412" alt="03_Tortuga" src="https://github.com/user-attachments/assets/57a6b8d0-2c52-4832-ba19-eaeb05337733" />
 
@@ -37,7 +37,7 @@ Igualmente aclarar que teníamos vía potencial por LFI para poder saber de este
 
 <pre>
   <code>
-    http://<ip>/mapa.php?filename=....//....//....//....//etc/passwd 
+    http://ip/mapa.php?filename=....//....//....//....//etc/passwd 
   </code>
 </pre>
 
@@ -59,7 +59,7 @@ Al listar todo el contenido tenemos un supuesto fichero ".nota.txt"
 
 La cual nos dice la contraseña del usuario capitán.
 
-## ESCALADA DE PRIVILEGIOS
+## 🧗‍♂️ ESCALADA DE PRIVILEGIOS
 
 <img width="792" height="143" alt="07_Tortuga" src="https://github.com/user-attachments/assets/ddd611c7-1628-43e4-8c28-728ae258b580" />
 
