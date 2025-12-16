@@ -1,4 +1,4 @@
-# CTF 
+# ⚙️ CTF 
 
 <img width="1024" height="1024" alt="00_watchstore" src="https://github.com/user-attachments/assets/8b0bf31b-4645-4541-bf2b-ff68d1d49f7e" />
 
@@ -10,12 +10,12 @@
 
 👥 Creadores: Condor & Curiosidades de Hackers
 
-# CONTACTO
+# 🔐 CONTACTO
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-# ENUMERACIÓN
+# 📋 ENUMERACIÓN
 
 Empezamos con un escaneo nmap para analizar puertos abiertos, servicios y versiones que tienen.
 
@@ -31,6 +31,8 @@ Tenemos una página como de relojes no había nada extraño, ni en el código fu
 <img width="949" height="151" alt="04_watchstore" src="https://github.com/user-attachments/assets/152c8d69-e5fb-462b-8a5e-b46c17f940a8" />
 <img width="944" height="146" alt="05_watchstore" src="https://github.com/user-attachments/assets/8b6de7dd-465f-40e1-a800-9677ffdf89bb" />
 Acabé encontrando dos rutas potenciales console y read vamos a echarles un ojo.
+
+# 🤯 INTRUSIÓN
 
 <img width="880" height="521" alt="06_watchstore" src="https://github.com/user-attachments/assets/3c839682-ac5f-4747-b6c3-8d268a246bdb" />
 Bueno en Console tenemos el acceso bloqueado de momento hasta que consigamos el pin de acceso. Vamos a ver el read.
@@ -48,6 +50,8 @@ Hemos podido ver el contenido del script vemos que arriba nos muestra el pin as�
 Pues ya tendríamos acceso. Vamos a subirnos una revshell y ponernos antes en escucha por el puerto 4444 para poder ganar acceso.
 
 <img width="1736" height="472" alt="011_watchstore" src="https://github.com/user-attachments/assets/578972b2-c5a0-4494-b01e-d77946cdd41e" />
+
+# 🧗‍♀️ESCALADA DE PRIVILEGIOS 
 
 Pues ya estaríamos como el usuario relox. Vamos a listarnos los permisos sudoers. Vemos que tiene asociado el binario neofetch vamos a abusar de ello, para ello vamos a ejecutar lo siguiente
 
