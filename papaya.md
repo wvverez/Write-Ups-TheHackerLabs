@@ -1,4 +1,4 @@
-# CTF 
+# ⚙️CTF 
 
 🪪 Nombre: Papaya
 
@@ -8,12 +8,12 @@
 
 👥 Creadores: Condor & Curiosidades de Hackers
 
-# CONTACTO 
+# 🔐CONTACTO 
 
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wvverez)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/wvverez)
 
-# ENUMERACIÓN 
+# 📋ENUMERACIÓN 
 
 Vamos a empezar con un sencillo escaneo nmap para analizar puertos abiertos y servicios/versiones que corren.
 
@@ -32,6 +32,8 @@ Pero necesitamos estar logueados.
 Probé a loguearme pero nada, así que me puse a probar contraseñas típicas por ejemplo admin admin o admin password y probando acabé encontrando la de administrador.
 
 <img width="935" height="733" alt="04_Papaya" src="https://github.com/user-attachments/assets/e8750f23-0d7b-435e-8578-51a156286f38" />
+
+# 💣 INTRUSIÓN 
 
 Ahora una vez estamos logueados como admin vamos a seguir las indicaciones de la vuln para poder escalarlo a un RCE y poder explotarla.
 
@@ -68,6 +70,7 @@ Al descomprimirlo nos sacan un pass.txt en el que tenemos la contraseña del usu
 
 <img width="475" height="146" alt="013_Papaya" src="https://github.com/user-attachments/assets/c7ead2d5-2a8d-4d2b-a802-7e879bf3555e" />
 
+# 🧗‍♂️ESCALADA DE PRIVILEGIOS 
 Ya tendríamos la primera flag. Una vez hemos conseguido acceso como el usuario papaya vamos a listar permisos sudoers para ver si podemos abusar de algun binario.
 
 <img width="945" height="420" alt="014_Papaya" src="https://github.com/user-attachments/assets/0ef11756-82be-4985-8a76-384b531ddd38" />
