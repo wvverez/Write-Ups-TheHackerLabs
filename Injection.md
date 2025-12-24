@@ -60,3 +60,13 @@ Al hacer esto conseguiremos las credenciales de un usuario llamado "dylan" . Des
 <img width="697" height="397" alt="012_Injection" src="https://github.com/user-attachments/assets/f980140d-7c15-4252-811d-4ede6f1c2cb6" />
 
 Efectivamente pudimos acceder por ssh como "dylan".
+
+Vamos a buscar desde la ráiz permisos SUID de los cuales podamos abusar.
+
+<img width="538" height="263" alt="013_Injection" src="https://github.com/user-attachments/assets/bca5a899-82e3-4ee8-b797-6a8a6c6e3fc4" />
+
+Tenemos el permiso SUID asociado del cual podemos abusar de la siguiente forma:
+
+<img width="421" height="131" alt="014_Injection" src="https://github.com/user-attachments/assets/338d8268-3b93-416f-b0dd-f1cc2e66578b" />
+
+Ya habríamos accedido como root, con lo cúal damos como resuelta la máquina.
