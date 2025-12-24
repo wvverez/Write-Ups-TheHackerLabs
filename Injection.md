@@ -10,6 +10,8 @@
 
 👥 Creadores: El pinguino de mario
 
+# 📋ENUMERACIÓN
+
 Vamos a empezar con un sencillo escaneo nmap en el que vamos a analizar puertos abiertos.
 
 <img width="696" height="251" alt="01_Injection" src="https://github.com/user-attachments/assets/a6a8c230-4ddb-4a1e-88c0-8b6c31866f32" />
@@ -31,6 +33,8 @@ No fue el caso, vamos a poner una comilla simple para ver como reacciona y si pu
 <img width="1782" height="596" alt="04_Injection" src="https://github.com/user-attachments/assets/bef107b9-d6cc-4c23-a652-1c163d5addad" />
 
 Vemos que nos da un error interno en el servidor en SQL syntax, vamos a analizarlo con sqlmap.
+
+# 💣INTRUSIÓN
 
 <img width="1859" height="472" alt="05_Injection" src="https://github.com/user-attachments/assets/4edadecd-a21b-4add-99f2-c1bf6f1f9baa" />
 
@@ -56,6 +60,8 @@ Ahora si encontramos 2 columnas una que se llama passwd y otra que se llama user
 <img width="999" height="606" alt="011_Injection" src="https://github.com/user-attachments/assets/34b521e4-225d-407e-8d07-9c22a90813b5" />
 
 Al hacer esto conseguiremos las credenciales de un usuario llamado "dylan" . Desde el panel de login podemos loguearnos como "dylan" pero realmente no conseguimos nada así que vamos a probar a acceder por ssh como este usuario.
+
+# 🧗‍♂️ESCALADA DE PRIVILEGIOS
 
 <img width="697" height="397" alt="012_Injection" src="https://github.com/user-attachments/assets/f980140d-7c15-4252-811d-4ede6f1c2cb6" />
 
